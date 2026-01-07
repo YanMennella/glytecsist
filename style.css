@@ -51,12 +51,13 @@ header {
 }
 
 .dashboard {
-    flex-direction: 1;
+    flex: 1;
     padding: 30px;
 }
 
 .cards {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
 }
 
