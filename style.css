@@ -15,13 +15,48 @@ header {
     padding: 20px;
 }
 
+.app {
+    display: flex;
+}
+
+.sidebar {
+    width: 220px;
+    background-color: #ffffff;
+    border-right: 1px solid #e0e0e0;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #0b56a6;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.sidebar nav a:hover {
+    background-color: #f0f4ff;
+    color: #0b56a6;
+}
+
 .dashboard {
+    flex-direction: 1;
     padding: 30px;
 }
 
 .cards {
     display: grid;
-    /*grid-template-columns: repeat(auto-fit, min-max(220px, 1fr));*/
     gap: 20px;
 }
 
@@ -42,7 +77,3 @@ header {
     font-size: 32px;
     font-weight: bold;
 }
-
-/*.card .success {
-    color: #2e7d32;
-}*/
